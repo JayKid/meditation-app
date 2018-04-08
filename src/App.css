@@ -1,0 +1,36 @@
+.App {
+  background-color: #7c14aa;
+}
+
+.App-header {
+  padding: 2rem 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.App-main {
+  font-size: 2rem;
+  padding: 0 2rem;
+}
+
+.timer-form > fieldset > * {
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.timer-value-explanation {
+  font-size: 1.2rem;
+}
+
+.Input {
+  font-size: 1.5rem;
+}
+
+.Button {
+  background-color: white;
+  color: #7c14aa;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
