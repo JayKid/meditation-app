@@ -17,22 +17,33 @@ class TimePicker extends Component {
 
   render() {
 
-    return (
+    const visuals = (
+      <section className="session-container">
+        <p>Here there would be smooth visuals</p>
+        <img src="https://media3.giphy.com/media/3o7aCVTfelG4XSbv3y/giphy.gif" alt="Calming visuals"/>
+      </section>
+    );
+
+    const form = (
       <form className="timer-form" onSubmit={this.handleSubmit.bind(this)}>
         <fieldset>
           <label htmlFor="time-picker-input">Duration (min):</label>
           <input 
             id="time-picker-input"
             type="number"
-            step="5"
+            step="1"
             pattern="\d*"
             required
             className="Input"
             onChange={this.handleChange.bind(this)}
-            value={this.props.timerValue}/>
+            value={this.props.value}/>
           <button className="Button" type="submit">Start the session</button>
         </fieldset>
       </form>
+    );
+
+    return (
+      this.props.isSessionOngoing ? visuals : form
     )
   }
 }
@@ -43,7 +54,8 @@ TimePicker.defaultProps = {
 
 function mapStateToProps(state, props) {
     return {
-        timerValue: state.TimePicker.value
+      value: state.TimePicker.value,
+      isSessionOngoing: state.TimePicker.session
     };
 }
 function mapDispatchToProps(dispatch) {

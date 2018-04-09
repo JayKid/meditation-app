@@ -6,7 +6,6 @@ export const updateTimerValue = (contents) => {
 }
 export const startSession = _ => {
   return {
-      type: 'startSession'
+      type: 'sessionStart'
   };
 }
-
