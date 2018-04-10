@@ -20,7 +20,7 @@ class TimePicker extends Component {
     const visuals = (
       <section className="session-container">
         <p>Here there would be smooth visuals</p>
-        <img src="https://media3.giphy.com/media/3o7aCVTfelG4XSbv3y/giphy.gif" alt="Calming visuals"/>
+        <img src="https://media3.giphy.com/media/3o7aCVTfelG4XSbv3y/giphy.gif" alt="Calming visuals" style={{width: '100%'}}/>
       </section>
     );
 
