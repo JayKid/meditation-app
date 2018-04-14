@@ -1,22 +1,32 @@
 .App {
-  background-color: #7c14aa;
 }
 
 .App-header {
-  padding: 2rem 0;
+  padding: 4rem 0 2rem 0;
   font-size: 2.5rem;
   text-align: center;
 }
 
 .App-main {
   font-size: 2rem;
-  padding: 0 2rem;
+  padding: 3rem 2rem 2rem 2rem;
+}
+
+.timer-form {
+  background: #ffffff12;
+  border: 2px solid #ffffffc2;
+  border-radius: 12px;
+  padding: 2rem 2rem 1rem 2rem;
 }
 
 .timer-form > fieldset > * {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   width: 100%;
+}
+
+[type="submit"] {
+  margin-top: 3rem;
 }
 
 .timer-value-explanation {
@@ -25,12 +35,26 @@
 
 .Input {
   font-size: 1.5rem;
+  height: 2.5rem;
+  border-radius: 4px;
 }
 
 .Button {
-  background-color: white;
-  color: #7c14aa;
   padding: 1rem;
   font-size: 1.5rem;
   text-align: center;
+
+  background: #00000014;
+  border-width: 2px;
+  border-color: #ffffffc2;
+  border-radius: 12px;
+  color: white;
+    
+}
+
+@media (min-width: 600px) {
+  .timer-form {
+    margin: 0 auto;
+    width: 60%;
+  }
 }

@@ -64,6 +64,18 @@ html, body, main, .App {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Helvetica Neue', 'Lato';
   color: white;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9a2ad6+0,2989d8+82,7db9e8+100 */
+background: #9a2ad6; /* Old browsers */
+background: -moz-linear-gradient(45deg, #9a2ad6 0%, #2989d8 82%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #9a2ad6 0%,#2989d8 82%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #9a2ad6 0%,#2989d8 82%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a2ad6', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+// Make focus styles contrasty
+*:focus {
+	outline-color: orange;
 }
