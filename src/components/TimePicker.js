@@ -5,6 +5,12 @@ import * as timePickerActions from '../actions/TimePicker';
 
 class TimePicker extends Component {
 
+  constructor(props) {
+    super(props)
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
   handleSubmit(event) {
     event.preventDefault();
     this.props.action.startSession();
@@ -25,7 +31,7 @@ class TimePicker extends Component {
     );
 
     const form = (
-      <form className="timer-form" onSubmit={this.handleSubmit.bind(this)}>
+      <form className="timer-form" onSubmit={this.handleSubmit}>
         <fieldset>
           <label htmlFor="time-picker-input">Duration (min):</label>
           <input 
@@ -35,7 +41,7 @@ class TimePicker extends Component {
             pattern="\d*"
             required
             className="Input"
-            onChange={this.handleChange.bind(this)}
+            onChange={this.handleChange}
             value={this.props.value}/>
           <button className="Button" type="submit">Start the session</button>
         </fieldset>
