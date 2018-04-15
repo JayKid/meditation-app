@@ -33,17 +33,22 @@ class TimePicker extends Component {
     const form = (
       <form className="timer-form" onSubmit={this.handleSubmit}>
         <fieldset>
-          <label htmlFor="time-picker-input">Duration (min):</label>
-          <input 
-            id="time-picker-input"
-            type="number"
-            step="1"
-            pattern="\d*"
-            required
-            className="Input"
-            onChange={this.handleChange}
-            value={this.props.value}/>
-          <button className="Button" type="submit">Start the session</button>
+          <label className="time-picker-input-label" htmlFor="time-picker-input">Duration</label>
+          <div className="time-picker-input-wrapper">
+            <input 
+              id="time-picker-input"
+              type="number"
+              step="1"
+              pattern="\d*"
+              required
+              size="3"
+              className="Input"
+              onChange={this.handleChange}
+              value={this.props.value}/>
+            <span className="timer-value-explanation">minutes</span>
+          </div>
+          
+          <button className="Button" type="submit">Start</button>
         </fieldset>
       </form>
     );

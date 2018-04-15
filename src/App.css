@@ -13,27 +13,41 @@
   background: #ffffff12;
   border: 2px solid #ffffffc2;
   border-radius: 12px;
-  padding: 2rem 2rem 1rem 2rem;
+  padding: 2rem;
 }
 
-.timer-form > fieldset > * {
+.time-picker-input-label {
   display: block;
   margin-bottom: 1.5rem;
   width: 100%;
 }
 
 [type="submit"] {
-  margin-top: 3rem;
+  width: 100%;
 }
 
 .timer-value-explanation {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+}
+
+.time-picker-input-wrapper {
+  margin-bottom: 2.5rem;  
 }
 
 .Input {
-  font-size: 1.5rem;
-  height: 2.5rem;
-  border-radius: 4px;
+  background: #00000014;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffffffc2;
+  border-radius: 6px;
+
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  
+  width: 30%;
+  height: 3rem;
+  margin-right: 1rem;
 }
 
 .Button {
@@ -41,12 +55,9 @@
   font-size: 1.5rem;
   text-align: center;
 
-  background: #00000014;
-  border-width: 2px;
-  border-color: #ffffffc2;
+  background: #fff;
   border-radius: 12px;
-  color: white;
-    
+  color: #6e5cd7;
 }
 
 @media (min-width: 600px) {

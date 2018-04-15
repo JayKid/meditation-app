@@ -75,7 +75,7 @@ background: linear-gradient(45deg, #9a2ad6 0%,#2989d8 82%,#7db9e8 100%); /* W3C,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a2ad6', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-// Make focus styles contrasty
+/* Make focus styles contrasty */
 *:focus {
 	outline-color: orange;
 }
