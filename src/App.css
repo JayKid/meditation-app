@@ -1,7 +1,11 @@
 .App-header {
-  padding: 4rem 0 2rem 0;
-  font-size: 2.5rem;
+  padding: 1em 0 0.5em 0;
+  font-size: 2.5em;
   text-align: center;
+}
+
+.App-logo {
+  width: 60%;
 }
 
 .App-main {
@@ -61,6 +65,15 @@
 }
 
 @media (min-width: 600px) {
+
+  .App-header {
+    padding: 4rem 0 2rem 0;
+  }
+  
+  .App-logo {
+    width: 10em;
+  }
+
   .timer-form {
     margin: 0 auto;
     width: 60%;

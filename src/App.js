@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TimePicker from './components/TimePicker';
+import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -7,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Relax App</h1>
+          <img className="App-logo" alt={'Relax App'} src={logo}/>
         </header>
         <main className="App-main">
           <TimePicker />

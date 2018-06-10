@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns="http://www.w3.org/2000/svg" width="100%" version="1.1" viewBox="0 0 1024 768">
+    <g id="Layer 2" visibility="hidden">
+        <path d="M-2.41508-0.093881L1024.48-0.093881L1024.48+770.51L-2.41508+770.51L-2.41508-0.093881Z" opacity="1" fill="#36093c"/>
+        <path stroke="#ffffff" d="M545.51+326.801" fill="none" stroke-width="7.22" opacity="1" stroke-linejoin="round"/>
+    </g>
+    <g id="Layer 1">
+        <path d="M565.378+423.834" stroke="#000000" stroke-width="1" fill="#ffffff" opacity="1" stroke-linejoin="round"/>
+        <path d="M574.141+509.876" stroke="#000000" stroke-width="1" fill="#ffffff" opacity="1" stroke-linejoin="round"/>
+        <path d="M544.33+76.5293L358.74+255.831L540.643+438.268L717.449+257.581L544.33+76.5293Z" stroke="#ffffff" stroke-width="41.51" fill="none" opacity="1" stroke-linejoin="round"/>
+        <path d="M244.407+469.556L541.606+698.981L829.167+466.309" stroke="#ffffff" stroke-width="40.85" fill="none" opacity="1" stroke-linejoin="round"/>
+    </g>
+</svg>
