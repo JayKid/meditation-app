@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as timePickerActions from '../actions/TimePicker';
-import Logo from './Logo';
-import styled, { keyframes } from 'styled-components';
 
 class TimePicker extends Component {
 
@@ -24,38 +22,7 @@ class TimePicker extends Component {
   }
 
   render() {
-
-    const animationTime = this.props.duration;
-
-    const keyFrameBlur = keyframes`
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.01;
-    }  
-    `;
-
-    const Wrapper = styled.div`
-      display: block;
-
-      svg path {
-        animation: ${keyFrameBlur} ease-in-out infinite;
-        animation-duration: ${animationTime}s;
-        animation-delay: 0s;  
-      }
-    `
-
-
-    const visuals = (
-      <section className="session-container">
-        <Wrapper>
-          {<Logo className="App-visuals" alt="Calming visuals" style={{width: "90%"}}/>}
-        </Wrapper>
-      </section>
-    );
-
-    const form = (
+    return (
       <form className="timer-form" onSubmit={this.handleSubmit}>
         <fieldset>
           <label className="time-picker-input-label" htmlFor="time-picker-input">Duration</label>
@@ -76,10 +43,6 @@ class TimePicker extends Component {
           <button className="Button" type="submit">Start</button>
         </fieldset>
       </form>
-    );
-
-    return (
-      this.props.isSessionOngoing ? visuals : form
     )
   }
 }
@@ -91,8 +54,6 @@ TimePicker.defaultProps = {
 function mapStateToProps(state, props) {
     return {
       value: state.TimePicker.value,
-      isSessionOngoing: state.TimePicker.session,
-      duration: state.TimePicker.duration
     };
 }
 function mapDispatchToProps(dispatch) {
