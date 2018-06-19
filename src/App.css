@@ -6,7 +6,6 @@
 
 .App-logo {
   width: 60%;
-  filter:url(#blurFilter);
 }
 
 .App-main {
