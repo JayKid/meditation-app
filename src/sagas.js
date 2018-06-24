@@ -2,7 +2,7 @@ import { delay } from 'redux-saga'
 import { put, takeEvery, all, select, call } from 'redux-saga/effects'
 import NoSleep from 'nosleep.js'
 
-var noSleep = new NoSleep();
+let noSleep = new NoSleep();
 const minutesToMilliseconds = minutes => minutes * 60 * 1000;
 
 export const getSleepPreventionStatus = state => state.TimePicker.preventSleep;

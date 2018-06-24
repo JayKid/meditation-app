@@ -26,10 +26,6 @@
   width: 100%;
 }
 
-[type="submit"] {
-  width: 100%;
-}
-
 .timer-value-explanation {
   font-size: 1.8rem;
 }
@@ -79,6 +75,10 @@
   background: #fff;
   border-radius: 12px;
   color: #6e5cd7;
+}
+
+.Button[type="submit"] {
+  width: 100%;
 }
 
 @media (min-width: 600px) {
