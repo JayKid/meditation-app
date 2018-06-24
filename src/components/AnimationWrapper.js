@@ -8,7 +8,7 @@ class AnimationWrapper extends Component {
 
         const keyFrameBlur = keyframes`
             0% {
-                opacity: 1;
+                opacity: 0.9;
             }
             100% {
                 opacity: 0.01;
@@ -17,6 +17,10 @@ class AnimationWrapper extends Component {
 
         const Wrapper = styled.div`
             display: block;
+            
+            svg {
+                filter: drop-shadow( 0 0 6px #b8eded );
+            }
 
             svg path {
                 animation: ${keyFrameBlur} ease-in-out infinite;

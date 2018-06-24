@@ -79,3 +79,8 @@
     width: 60%;
   }
 }
+
+.App-visuals {
+  height: 90vh;
+  width: 80vw;
+}
