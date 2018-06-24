@@ -34,11 +34,16 @@
   font-size: 1.8rem;
 }
 
-.time-picker-input-wrapper {
+.prevent-sleep-input-label {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.time-picker-input-wrapper, .prevent-sleep-input-wrapper {
   margin-bottom: 2.5rem;  
 }
 
-.Input {
+.Input-time {
   background: #00000014;
   border-style: solid;
   border-width: 2px;
@@ -52,6 +57,18 @@
   width: 30%;
   height: 3rem;
   margin-right: 1rem;
+}
+
+.Input-sleep {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+  fill: #4a148c;
+}
+
+.Input-sleep.checked {
+  fill: #a5d6a7;
 }
 
 .Button {
@@ -83,4 +100,14 @@
 .App-visuals {
   height: 90vh;
   width: 80vw;
+}
+
+
+.screenReaderOnly {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
 }

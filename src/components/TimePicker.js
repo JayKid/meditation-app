@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import Checkbox  from './Checkbox';
 import * as timePickerActions from '../actions/TimePicker';
 
 class TimePicker extends Component {
@@ -9,6 +10,7 @@ class TimePicker extends Component {
     super(props)
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleToggleSleepPrevention = this.handleToggleSleepPrevention.bind(this)
   }
 
   handleSubmit(event) {
@@ -19,6 +21,11 @@ class TimePicker extends Component {
   handleChange(event) {
     const timerInputContents = event.target.value;
     this.props.action.updateTimerValue(timerInputContents);
+  }
+
+  handleToggleSleepPrevention(event) {
+    const isSleepPreventionEnabled = event.target.checked;
+    this.props.action.setPreventSleepMode(isSleepPreventionEnabled);
   }
 
   render() {
@@ -34,12 +41,19 @@ class TimePicker extends Component {
               pattern="\d*"
               required
               size="3"
-              className="Input"
+              className="Input-time"
               onChange={this.handleChange}
               value={this.props.value}/>
             <span className="timer-value-explanation">minutes</span>
           </div>
-          
+          <div className="prevent-sleep-input-wrapper">
+            <Checkbox 
+              id="prevent-sleep-input" 
+              className="Input-sleep" 
+              onChange={this.handleToggleSleepPrevention}
+              checked={this.props.isSleepPreventOn}/>
+            <label className="prevent-sleep-input-label" htmlFor="prevent-sleep-input">Prevent sleep</label>
+          </div>
           <button className="Button" type="submit">Start</button>
         </fieldset>
       </form>
@@ -47,13 +61,10 @@ class TimePicker extends Component {
   }
 }
 
-TimePicker.defaultProps = {
-  timerValue: '10'
-};
-
 function mapStateToProps(state, props) {
     return {
       value: state.TimePicker.value,
+      isSleepPreventOn: state.TimePicker.preventSleep
     };
 }
 function mapDispatchToProps(dispatch) {

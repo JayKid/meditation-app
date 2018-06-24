@@ -9,3 +9,9 @@ export const startSession = _ => {
       type: 'sessionStart'
   };
 }
+export const setPreventSleepMode = (on) => {
+  return {
+      type: 'updatePreventSleepMode',
+      contents: on
+  };
+}
