@@ -14,10 +14,10 @@ export default class Checkbox extends Component {
 
         return (
             <span>
+                <input className="screenReaderOnly" id={id} onChange={onChange} type="checkbox" checked={checked}/>
                 <label htmlFor={id}>
                     {SVG}     
                 </label>
-                <input className="screenReaderOnly" id={id} onChange={onChange} type="checkbox" checked={checked}/>
             </span>
         );
     } 

@@ -102,6 +102,10 @@
   width: 80vw;
 }
 
+#prevent-sleep-input:focus ~ label svg {
+  outline: 3px solid orange;
+}
+
 
 .screenReaderOnly {
   position:absolute;
