@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.21",
     "nosleep.js": "^0.7.0",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
